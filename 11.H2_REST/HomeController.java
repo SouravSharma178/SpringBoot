@@ -30,8 +30,11 @@ public String addAlien(Alien alien) {
 
 @RequestMapping("/aliens")
 @ResponseBody
+// since we are using REST here we are going to use @ResponseBody
 public String getAliens() {
 	
+// the repo.findAll() is an iterable by default so we need to convert it to a string
 return repo.findAll().toString();
 }
 }
+
