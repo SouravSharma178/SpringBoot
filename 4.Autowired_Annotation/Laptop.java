@@ -3,7 +3,7 @@ package com.example.demo;
 import org.springframework.stereotype.Service;
 
 // here we can write service or component to indicate to spring boot that it is a component
-@Service
+@Component
 public class Laptop {
     private int lid;
     private String brand;
